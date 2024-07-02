@@ -6,5 +6,5 @@ class PostTagTable(models.Model):
     tagId = models.ForeignKey('tag.TagTable', on_delete=models.CASCADE, db_column='tagID')
 
     class Meta:
-        app_lable = 'postTag'
+        app_label = 'postTag'
         db_table = 'tblPostTag'

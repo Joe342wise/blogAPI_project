@@ -9,5 +9,5 @@ class TagTable(models.Model):
         return self.tagName
     
     class Meta:
-        app_lable = 'tag'
+        app_label = 'tag'
         db_table = 'tblTag'
