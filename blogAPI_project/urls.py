@@ -19,10 +19,12 @@ from django.urls import path
 from user.urls import urlpatterns as user_urls
 from category.urls import urlpatterns as category_urls
 from posts.urls import urlpatterns as post_urls
+from comment.urls import urlpatterns as comment_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', user_urls),
     path('category/', category_urls),
     path('post/', post_urls),
+    path('comment/', comment_urls),
 ]
