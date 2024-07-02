@@ -20,6 +20,8 @@ from user.urls import urlpatterns as user_urls
 from category.urls import urlpatterns as category_urls
 from posts.urls import urlpatterns as post_urls
 from comment.urls import urlpatterns as comment_urls
+from postTag.urls import urlPatterns as postTag_urls
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +29,5 @@ urlpatterns = [
     path('category/', category_urls),
     path('post/', post_urls),
     path('comment/', comment_urls),
+    path('postTag/', postTag_urls),
 ]
